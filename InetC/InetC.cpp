@@ -1,11 +1,6 @@
-// InetC.cpp : Defines the entry point for the console application.
+// Inetc.cpp : Defines the exported functions for the DLL application.
 //
 
 #include "stdafx.h"
 
-
-int _tmain(int argc, _TCHAR* argv[])
-{
-	return 0;
-}
 
