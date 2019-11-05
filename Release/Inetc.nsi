@@ -10,6 +10,8 @@
 ;--------------------------------
 ;General
 
+!addplugindir "."
+
   ;Name and file
   Name "Modern UI Test"
   OutFile "Inetc.exe"

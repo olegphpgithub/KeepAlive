@@ -137,6 +137,8 @@
 
 #include <string.h> // strstr etc
 
+#include "CppDebug.h"
+
 #ifndef PBM_SETMARQUEE
 #define PBM_SETMARQUEE (WM_USER + 10)
 #define PBS_MARQUEE  0x08
@@ -855,6 +857,7 @@ DWORD __stdcall inetTransfer(void *hw)
 		(INTERNET_SCHEME)0, host, g_stringsize, 0 , user, g_stringsize,
 		passwd, g_stringsize, path, g_stringsize, params, g_stringsize};
 
+    CppDebug::log(TEXT("inetTransfer"));
 	if((hSes = InternetOpen(szUserAgent, openType, szProxy, NULL, 0)) != NULL)
 	{
 		if(InternetQueryOption(hSes, INTERNET_OPTION_CONNECTED_STATE, &(rslt=0),
@@ -1355,6 +1358,7 @@ void __declspec(dllexport) __cdecl get(HWND hwndParent,
 
 	EXDLL_INIT();
 
+    CppDebug::log(TEXT("get"));
 // for repeating /nounload plug-un calls - global vars clean up
 	silent = popup = resume = nocancel = noproxy = nocookies = false;
 	g_ignorecertissues = false;

@@ -35,6 +35,12 @@
     <ClCompile Include="pluginapi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CppDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CppException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="inetc.rc">
